@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Outriders",
+    "imageRef": "outriders",
+    "price": "200,00",
+    "status": false
+  },
+  {
+    "name": "Cyberpunk",
+    "imageRef": "cyberpunk",
+    "price": "200,00",
+    "status": false
+  },
+  {
+    "name": "Donkey Kong Country Tropical",
+    "imageRef": "donkey",
+    "price": "200,00",
+    "status": false
+  }
+]
