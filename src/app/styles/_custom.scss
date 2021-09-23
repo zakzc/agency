@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
+// specific
+@import "../styles/layout";
+///
+@import "../styles/banner";
+@import "../styles/display";
+@import "../styles/footer";
+@import "../styles/navBar";
+@import "../styles/products";
+
+///
+body {
+    font-family: "Roboto", Helvetica, sans-serif;
+    background-color: white;
+    box-sizing: border-box;
+    // full page
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}

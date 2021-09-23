@@ -1,0 +1,67 @@
+// * base css
+
+/* Style the header */
+.header {
+    grid-area: header;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* The grid container */
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "header header header header header header"
+        "header header header header header header"
+        "left middle middle middle middle right"
+        "left middle middle middle middle right"
+        "left middle middle middle middle right"
+        "footer footer footer footer footer footer";
+    /* grid-column-gap: 10px; - if a gap between the columns becomes necessary */
+}
+
+.left,
+.middle,
+.right {
+    padding: 1px;
+}
+
+/* Style the left column */
+.left {
+    grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+    grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+    grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+    grid-area: footer;
+    text-align: center;
+    // margin-top: -10px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-areas:
+            "header header header header header header header header"
+            "middle middle middle middle middle middle middle"
+            "footer footer footer footer footer footer footer footer";
+    }
+}
+
+// ! custom css
+.wrapper {
+    background-color: darkgray;
+    height: 100vh;
+}

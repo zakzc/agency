@@ -1,0 +1,30 @@
+// * base css
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+}
+
+.flex-item-left {
+    background-color: #f1f1f1;
+    flex: 50%;
+}
+
+.flex-item-right {
+    background-color: dodgerblue;
+    flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 600px) {
+    .flex-item-right,
+    .flex-item-left {
+        flex: 100%;
+    }
+}
+
+// ! custom css
+.display {
+    background-color: blue;
+}
