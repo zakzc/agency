@@ -1,14 +1,22 @@
 import React from "react";
-//
+// assets
+import outriders from "../assets/img/outriders.png";
+// data
 import data from "../data/data.json";
 
 const Products = () => {
   const ProductDescription = ({ name, price, status }) => (
-    <>
-      <h4>{name}</h4>
-      <p>{price}</p>
-      <p>{status}</p>
-    </>
+    <div className="w3-card-4">
+      <img src={outriders} alt="Alps" style={{ width: "100px" }} />
+      <div
+        className="w3-container w3-center"
+        style={{ backgroundColor: "whitesmoke" }}
+      >
+        <h4>{name}</h4>
+        <p>{price}</p>
+        <p>{status}</p>
+      </div>
+    </div>
   );
 
   return (

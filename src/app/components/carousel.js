@@ -23,7 +23,11 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "green" }}
+      style={{
+        ...style,
+        display: "block",
+        background: "green",
+      }}
       onClick={onClick}
     />
   );
@@ -55,7 +59,7 @@ export default class Carousel extends Component {
     ///
     const BannerData = [
       { reference: Banner1, alt: "Mortal Kombat banner", bcg: "black" },
-      { reference: Banner2, alt: "Red Redemption", bcg: "darkred" },
+      { reference: Banner2, alt: "Red Redemption banner", bcg: "darkred" },
     ];
     ///
     const BannerImage = ({ imageRef, imageAlt, bcgColor }) => {

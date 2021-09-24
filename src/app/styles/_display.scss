@@ -7,13 +7,13 @@
 }
 
 .flex-item-left {
-    background-color: #f1f1f1;
     flex: 50%;
+    z-index: 100;
 }
 
 .flex-item-right {
-    background-color: dodgerblue;
     flex: 50%;
+    z-index: 100;
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
@@ -24,7 +24,6 @@
     }
 }
 
-// ! custom css
-.display {
-    background-color: blue;
-}
+// .display {
+//     background-color: white;
+// }

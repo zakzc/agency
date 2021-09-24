@@ -1,22 +1,28 @@
 import React from "react";
+// assets
+import hamburger from "../assets/svgs/icon_hamburguer.svg";
 
 export default function NavBar() {
   return (
     <div className="navBar">
       <ul>
         <li>
-          <a className="active" href="#home">
-            Home
-          </a>
+          <img
+            style={{
+              width: "15px",
+            }}
+            src={hamburger}
+            alt="hamburger menu"
+          />
         </li>
         <li>
-          <a href="#news">News</a>
+          <span>Logo</span>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <span>Contato Busca</span>
         </li>
         <li>
-          <a href="#about">About</a>
+          <span className="shopping-bag">Sacola</span>
         </li>
       </ul>
     </div>
