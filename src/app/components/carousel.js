@@ -56,12 +56,12 @@ export default class Carousel extends Component {
         },
       ],
     };
-    ///
+    // * data
     const BannerData = [
       { reference: Banner1, alt: "Mortal Kombat banner", bcg: "black" },
       { reference: Banner2, alt: "Red Redemption banner", bcg: "darkred" },
     ];
-    ///
+    // * view
     const BannerImage = ({ imageRef, imageAlt, bcgColor }) => {
       console.log("bad", typeof bcgColor);
       return (
