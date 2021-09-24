@@ -1,6 +1,6 @@
 import React from "react";
 // comps
-import Banner from "./banner";
+import Carousel from "./carousel";
 import Display from "./display";
 import Footer from "./footer";
 import NavBar from "./navBar";
@@ -8,20 +8,20 @@ import Products from "./products";
 
 const Layout = () => {
   return (
-    <div class="wrapper grid-container">
-      <div class="header">
-        <NavBar />
-        <Banner />
+    <div className="wrapper">
+      <NavBar />
+      <Carousel />
+      <div className="grid-container">
+        <div className="left"></div>
+        <div className="middle">
+          <Display />
+          <br />
+          <br />
+          <Products />
+        </div>
+        <div className="right"></div>
       </div>
-
-      <div class="left"></div>
-      <div class="middle">
-        <Display />
-        <Products />
-      </div>
-      <div class="right"></div>
-
-      <div class="footer">
+      <div className="footer">
         <Footer />
       </div>
     </div>
