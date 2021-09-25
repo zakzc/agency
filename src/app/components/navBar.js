@@ -6,6 +6,10 @@ export default function NavBar() {
   const [popUp, setPopUp] = useState(false);
   console.log("pop", popUp);
 
+  const PopUpBox = () => {
+    return <p className="pop-up-box"> This is the popup text...</p>;
+  };
+
   const PopUpButton = () => {
     return (
       <li>
@@ -20,7 +24,7 @@ export default function NavBar() {
           <span
             style={popUp ? { visibility: "show" } : { visibility: "hidden" }}
           >
-            This is the popup text...
+            <PopUpBox />
           </span>
         </button>
       </li>
