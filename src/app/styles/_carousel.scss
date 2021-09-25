@@ -3,3 +3,17 @@
     color: white;
     height: 240px;
 }
+
+.banner-view {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    color: white;
+    width: 150px;
+}

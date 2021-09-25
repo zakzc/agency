@@ -60,7 +60,7 @@ const Products = () => {
         className="card"
         style={{
           width: "180px",
-          height: "250px",
+          // height: "250px",
         }}
       >
         <div style={{ margin: "auto" }}>

@@ -7,31 +7,31 @@ import Slider from "react-slick";
 import Banner1 from "../assets/img/principal_banner_desktop.jpg";
 import Banner2 from "../assets/img/principal_banner_desktop_02.jpg";
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
-  );
-}
+// function SampleNextArrow(props) {
+//   const { className, style, onClick } = props;
+//   return (
+//     <div
+//       className={className}
+//       style={{ ...style, display: "block", background: "red" }}
+//       onClick={onClick}
+//     />
+//   );
+// }
 
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: "block",
-        background: "green",
-      }}
-      onClick={onClick}
-    />
-  );
-}
+// function SamplePrevArrow(props) {
+//   const { className, style, onClick } = props;
+//   return (
+//     <div
+//       className={className}
+//       style={{
+//         ...style,
+//         display: "block",
+//         background: "green",
+//       }}
+//       onClick={onClick}
+//     />
+//   );
+// }
 
 export default class Carousel extends Component {
   render() {
@@ -43,8 +43,8 @@ export default class Carousel extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />,
+      // nextArrow: <SampleNextArrow />,
+      // prevArrow: <SamplePrevArrow />,
       responsive: [
         {
           breakpoint: 600,
@@ -58,9 +58,20 @@ export default class Carousel extends Component {
     };
     // * data
     const BannerData = [
-      { reference: Banner1, alt: "Mortal Kombat banner", bcg: "black" },
-      { reference: Banner2, alt: "Red Redemption banner", bcg: "darkred" },
+      {
+        reference: Banner1,
+        alt: "Mortal Kombat banner",
+        bcg: "black",
+        text: "Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.",
+      },
+      {
+        reference: Banner2,
+        alt: "Red Redemption banner",
+        bcg: "darkred",
+        text: "Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.",
+      },
     ];
+
     // * view
     const BannerImage = ({ imageRef, imageAlt, bcgColor }) => {
       console.log("bad", typeof bcgColor);
@@ -71,16 +82,30 @@ export default class Carousel extends Component {
       );
     };
 
+    const BannerView = ({ imageRef, imageAlt, bcgColor, bannerText }) => {
+      return (
+        <div className="banner-view">
+          <BannerImage
+            imageRef={imageRef}
+            imageAlt={imageAlt}
+            bcgColor={bcgColor}
+          />
+          <p className="banner-text">{bannerText}</p>
+        </div>
+      );
+    };
+
     ///
     return (
       <div className="carousel">
         <Slider {...settings}>
           {BannerData.map((b, index) => (
-            <BannerImage
+            <BannerView
               key={index}
               imageRef={b.reference}
               imageAlt={b.alt}
               bcgColor={b.bcg}
+              bannerText={b.text}
             />
           ))}
         </Slider>

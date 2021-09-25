@@ -18,11 +18,11 @@ const Layout = () => {
           <br />
           <br />
           <Products />
-          <div className="footer">
-            <Footer />
-          </div>
         </div>
         <div className="right"></div>
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </div>
   );
