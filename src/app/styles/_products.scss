@@ -4,6 +4,10 @@
     margin-right: 5%;
 }
 
+.product-header {
+    display: flex;
+}
+
 .product-list {
     background-color: aquamarine;
     display: inline-flex;
@@ -26,6 +30,29 @@
     padding: 2px 16px;
     display: table-cell;
     vertical-align: middle;
-    height: 100px;
+    height: 180px;
     width: 180px;
+}
+
+.card-image {
+    width: 120px;
+    height: 150px;
+}
+
+.buyingButton {
+    background-color: blue; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+.buyingButton:hover {
+    background-color: darkblue; /* Green */
+    color: white;
 }

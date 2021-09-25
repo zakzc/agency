@@ -1,8 +1,9 @@
 import React from "react";
 // assets
-import outriders from "../assets/img/outriders.png";
 import cyberpunk from "../assets/img/cyberpunk.png";
 import kong from "../assets/img/kong.png";
+import outriders from "../assets/img/outriders.png";
+import squares from "../assets/img/squares.png";
 // data
 // import data from "../data/data.json";
 
@@ -30,6 +31,28 @@ const Products = () => {
   ];
 
   // * view
+
+  const ProductHeader = () => {
+    return (
+      <div className="product-header">
+        <img
+          src={squares}
+          alt="icon"
+          style={{ width: "20px", marginRight: "10px" }}
+        />
+        <h3>Produtos em Destaque</h3>
+      </div>
+    );
+  };
+
+  const BuyButton = (buyingStatus) => {
+    return (
+      <button className="buyingButton" type="button">
+        {buyingStatus.buyingStatus === true ? "Comprado" : "Comprar"}
+      </button>
+    );
+  };
+
   const ProductDescription = ({ name, price, status, imageRef }) => {
     console.log(imageRef, typeof imageRef);
     return (
@@ -41,21 +64,14 @@ const Products = () => {
         }}
       >
         <div style={{ margin: "auto" }}>
-          <img
-            src={imageRef}
-            alt={name}
-            style={{
-              width: "120px",
-              height: "150px",
-            }}
-          />
+          <img src={imageRef} alt={name} className="card-image" />
           <div
             className="card-container"
             style={{ backgroundColor: "#f5f5f5" }}
           >
             <p>{name}</p>
             <h4 style={{ textDecoration: "bold" }}>{price}</h4>
-            <p>{status ? "Comprado" : "Comprar"}</p>
+            <BuyButton buyingStatus={status} />
           </div>
         </div>
       </div>
@@ -64,7 +80,7 @@ const Products = () => {
 
   return (
     <div className="products">
-      <h3>Produtos em Destaque</h3>
+      <ProductHeader />
       <div className="product-list">
         {ProductData.map((d, index) => (
           <div key={index}>
