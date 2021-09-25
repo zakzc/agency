@@ -4,7 +4,7 @@ import hamburger from "../assets/svgs/icon_hamburguer.svg";
 
 export default function NavBar() {
   return (
-    <div className="navBar">
+    <div className="nav-bar">
       <ul>
         <li>
           <img

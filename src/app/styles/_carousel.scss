@@ -2,7 +2,29 @@
     background-color: darkblue;
     color: white;
     height: 240px;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
+
+.banner-image-area {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+.top-nav {
+    overflow: hidden;
+}
+
+// .nav-bar-container {
+//     position: absolute;
+//     margin: 20px;
+//     width: auto;
+// }
 
 .banner-view {
     position: relative;
@@ -10,10 +32,28 @@
     color: white;
 }
 
+.banner-image {
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+
 .banner-text {
     position: absolute;
-    top: 50%;
-    right: 25px;
+    top: 20%;
+    right: 100px;
     color: white;
-    width: 150px;
+    width: 300px;
+    font-size: large;
+}
+
+.sup {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.5em;
+    font-size: small;
 }
