@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 // assets
 import hamburger from "../assets/svgs/icon_hamburguer.svg";
 
 export default function NavBar() {
-  return (
-    <div className="nav-bar">
-      <ul>
-        <li>
+  const [popUp, setPopUp] = useState(false);
+  console.log("pop", popUp);
+
+  const PopUpButton = () => {
+    return (
+      <li>
+        <button className="nav-button" onClick={() => setPopUp(!popUp)}>
           <img
             style={{
               width: "15px",
@@ -14,7 +17,19 @@ export default function NavBar() {
             src={hamburger}
             alt="hamburger menu"
           />
-        </li>
+          <span
+            style={popUp ? { visibility: "show" } : { visibility: "hidden" }}
+          >
+            This is the popup text...
+          </span>
+        </button>
+      </li>
+    );
+  };
+
+  const MiniNav = () => {
+    return (
+      <>
         <li>
           <span>Logo space</span>
         </li>
@@ -24,6 +39,15 @@ export default function NavBar() {
         <li>
           <span className="shopping-bag">Sacola</span>
         </li>
+      </>
+    );
+  };
+
+  return (
+    <div className="nav-bar">
+      <ul className="nav-bar-contents">
+        <PopUpButton />
+        <MiniNav />
       </ul>
     </div>
   );

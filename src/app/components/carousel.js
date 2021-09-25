@@ -37,7 +37,7 @@ export default class Carousel extends Component {
   render() {
     const settings = {
       className: "right",
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 150,
       slidesToShow: 1,
@@ -78,7 +78,6 @@ export default class Carousel extends Component {
 
     // * view
     const BannerImage = ({ imageRef, imageAlt, bcgColor }) => {
-      console.log("bad", typeof bcgColor);
       return (
         <div style={{ backgroundColor: bcgColor }}>
           <img src={imageRef} alt={imageAlt} style={{ width: "80%" }} />

@@ -5,6 +5,10 @@
     width: 100vw;
 }
 
+.nav-bar-contents {
+    margin-left: 10%;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -28,6 +32,78 @@ li a:hover {
     background-color: #111;
 }
 
+.nav-button {
+    background-color: transparent;
+    color: white;
+    // height: 15px;
+    // width: 15px;
+    margin-top: 15px;
+}
+
 // .shopping-bag {
 
+// }
+
+// Pop up banner
+
+/* Popup container */
+// .popup {
+//     position: relative;
+//     display: inline-block;
+//     cursor: pointer;
+// }
+
+/* The actual popup (appears on top) */
+// .popup .popup-text {
+//     visibility: hidden;
+//     width: 160px;
+//     // background-color: #555;
+//     // color: #fff;
+//     text-align: center;
+//     border-radius: 6px;
+//     padding: 8px 0;
+//     position: absolute;
+//     z-index: 1;
+//     bottom: 125%;
+//     left: 50%;
+//     margin-left: -80px;
+// }
+
+/* Popup arrow */
+//.popup .popup-text::after {
+// content: "";
+// position: absolute;
+// top: 100%;
+// left: 50%;
+// margin-left: -5px;
+// border-width: 5px;
+// border-style: solid;
+// border-color: #555 transparent transparent transparent;
+// color: white;
+//}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+// .popup .show {
+//     visibility: visible;
+//     -webkit-animation: fadeIn 1s;
+//     animation: fadeIn 1s;
+// }
+
+/* Add animation (fade in the popup) */
+// @-webkit-keyframes fadeIn {
+//     from {
+//         opacity: 0;
+//     }
+//     to {
+//         opacity: 1;
+//     }
+// }
+
+// @keyframes fadeIn {
+//     from {
+//         opacity: 0;
+//     }
+//     to {
+//         opacity: 1;
+//     }
 // }

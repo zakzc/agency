@@ -54,7 +54,6 @@ const Products = () => {
   };
 
   const ProductDescription = ({ name, price, status, imageRef }) => {
-    console.log(imageRef, typeof imageRef);
     return (
       <div
         className="card"

@@ -1,5 +1,5 @@
 .products {
-    background-color: pink;
+    // background-color: pink;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -9,8 +9,10 @@
 }
 
 .product-list {
-    background-color: aquamarine;
+    background-color: white;
     display: inline-flex;
+    // ! This will be changed in the layout
+    flex-wrap: wrap;
 }
 
 .card {

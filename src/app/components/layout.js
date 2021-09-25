@@ -5,6 +5,7 @@ import Display from "./display";
 import Footer from "./footer";
 import NavBar from "./navBar";
 import Products from "./products";
+//import ProductList from "./productList";
 
 const Layout = () => {
   return (
@@ -17,6 +18,7 @@ const Layout = () => {
           <Display />
           <br />
           <br />
+          {/* <ProductList /> */}
           <Products />
         </div>
         <div className="right"></div>
