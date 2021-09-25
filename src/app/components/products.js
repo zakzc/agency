@@ -37,6 +37,7 @@ const Products = () => {
         className="card"
         style={{
           width: "180px",
+          height: "250px",
         }}
       >
         <div style={{ margin: "auto" }}>
@@ -45,11 +46,12 @@ const Products = () => {
             alt={name}
             style={{
               width: "120px",
+              height: "150px",
             }}
           />
           <div
             className="card-container"
-            style={{ backgroundColor: "#F5F5F5" }}
+            style={{ backgroundColor: "#f5f5f5" }}
           >
             <p>{name}</p>
             <h4 style={{ textDecoration: "bold" }}>{price}</h4>
@@ -63,16 +65,18 @@ const Products = () => {
   return (
     <div className="products">
       <h3>Produtos em Destaque</h3>
-      {ProductData.map((d, index) => (
-        <div key={index}>
-          <ProductDescription
-            name={d.name}
-            price={d.price}
-            status={d.status}
-            imageRef={d.imageRef}
-          />
-        </div>
-      ))}
+      <div className="product-list">
+        {ProductData.map((d, index) => (
+          <div key={index}>
+            <ProductDescription
+              name={d.name}
+              price={d.price}
+              status={d.status}
+              imageRef={d.imageRef}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
