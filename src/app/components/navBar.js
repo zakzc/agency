@@ -16,7 +16,7 @@ export default function NavBar() {
           />
         </li>
         <li>
-          <span>Logo</span>
+          <span>Logo space</span>
         </li>
         <li>
           <span>Contato Busca</span>
