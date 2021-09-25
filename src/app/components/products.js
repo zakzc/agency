@@ -28,30 +28,37 @@ const Products = () => {
       status: false,
     },
   ];
+
   // * view
-  const ProductDescription = ({ name, price, status, imageRef }) => (
-    <div
-      className="card"
-      style={{
-        width: "180px",
-      }}
-    >
-      <div style={{ margin: "auto" }}>
-        <img
-          src={imageRef}
-          alt={name}
-          style={{
-            width: "120px",
-          }}
-        />
-        <div className="card-container" style={{ backgroundColor: "#F5F5F5" }}>
-          <p>{name}</p>
-          <h4 style={{ textDecoration: "bold" }}>{price}</h4>
-          <p>{status ? "Comprado" : "Comprar"}</p>
+  const ProductDescription = ({ name, price, status, imageRef }) => {
+    console.log(imageRef, typeof imageRef);
+    return (
+      <div
+        className="card"
+        style={{
+          width: "180px",
+        }}
+      >
+        <div style={{ margin: "auto" }}>
+          <img
+            src={imageRef}
+            alt={name}
+            style={{
+              width: "120px",
+            }}
+          />
+          <div
+            className="card-container"
+            style={{ backgroundColor: "#F5F5F5" }}
+          >
+            <p>{name}</p>
+            <h4 style={{ textDecoration: "bold" }}>{price}</h4>
+            <p>{status ? "Comprado" : "Comprar"}</p>
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   return (
     <div className="products">
@@ -62,7 +69,7 @@ const Products = () => {
             name={d.name}
             price={d.price}
             status={d.status}
-            image={d.imageRef}
+            imageRef={d.imageRef}
           />
         </div>
       ))}
