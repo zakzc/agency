@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 // assets
 import hamburger from "../assets/svgs/icon_hamburguer.svg";
+import plane from "../assets/svgs/paper-plane.svg";
+import search from "../assets/svgs/search-solid.svg";
+import bag from "../assets/svgs/shopping-bag-solid.svg";
 
 export default function NavBar() {
   const [popUp, setPopUp] = useState(false);
@@ -14,13 +17,7 @@ export default function NavBar() {
     return (
       <li>
         <button className="nav-button" onClick={() => setPopUp(!popUp)}>
-          <img
-            style={{
-              width: "15px",
-            }}
-            src={hamburger}
-            alt="hamburger menu"
-          />
+          <img src={hamburger} alt="hamburger menu" className="nav-svg" />
           <span
             style={popUp ? { visibility: "show" } : { visibility: "hidden" }}
           >
@@ -33,17 +30,25 @@ export default function NavBar() {
 
   const MiniNav = () => {
     return (
-      <>
+      <div className="mini-nav">
         <li>
-          <span>Logo space</span>
+          <span>
+            <img src={plane} alt="contato" className="nav-svg" />
+            Contato
+          </span>
         </li>
         <li>
-          <span>Contato Busca</span>
+          <span>
+            <img src={search} alt="busca" className="nav-svg" />
+            Busca
+          </span>
         </li>
         <li>
-          <span className="shopping-bag">Sacola</span>
+          <span className="shopping-bag">
+            <img src={bag} alt="sacola de compras" className="nav-svg" />
+          </span>
         </li>
-      </>
+      </div>
     );
   };
 
