@@ -102,11 +102,11 @@ export default class Carousel extends Component {
           />
           <div className="banner-text">
             <h1>{imageAlt}</h1>
-            <h2 style={{ color: "#3ec6e0" }}>
+            <h2 className="price-stamp">
               <span className="sub">{itemPrice}</span>
               <span className="sup">,{itemCents}</span>
             </h2>
-            <p>{bannerText}</p>
+            <div>{bannerText}</div>
           </div>
         </div>
       );

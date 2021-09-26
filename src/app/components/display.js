@@ -4,6 +4,9 @@ import Zelda from "../assets/img/zelda_banner.jpg";
 import Sekiro from "../assets/img/sekiro_banner.jpg";
 
 const Display = () => {
+  const DisplayText = () => {
+    return <span className="display-text">Some text goes here</span>;
+  };
   return (
     <div className="display" style={{ marginTop: "-50px" }}>
       <div className="flex-container">
@@ -13,6 +16,7 @@ const Display = () => {
             alt="Zelda game"
             style={{ width: "350px", marginRight: "10px" }}
           />
+          {/* <DisplayText /> */}
         </div>
 
         <div className="flex-item-right">
@@ -21,6 +25,7 @@ const Display = () => {
             alt="Sekiro game"
             style={{ width: "350px", marginLeft: "10px" }}
           />
+          {/* <DisplayText /> */}
         </div>
       </div>
     </div>

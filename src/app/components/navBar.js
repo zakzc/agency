@@ -10,7 +10,37 @@ export default function NavBar() {
   console.log("pop", popUp);
 
   const PopUpBox = () => {
-    return <p className="pop-up-box"> This is the popup text...</p>;
+    return (
+      <div className="pop-up-box">
+        <table className="drop-menu">
+          <tr>
+            <th>Luta</th>
+            <th>Ação/Aventura</th>
+            <th>Corrida</th>
+          </tr>
+          <tr>
+            <td>Mortal Kombat</td>
+            <td>GTA V</td>
+            <td>Need for Speed</td>
+          </tr>
+          <tr>
+            <td>Smash Bros</td>
+            <td>Tomb Raider</td>
+            <td>Forza Horizon</td>
+          </tr>
+          <tr>
+            <td>Killer Instinct</td>
+            <td>Halo</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>DBZ Kakarot</td>
+            <td>Call of Duty</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    );
   };
 
   const PopUpButton = () => {
@@ -32,13 +62,13 @@ export default function NavBar() {
     return (
       <div className="mini-nav">
         <li>
-          <span>
+          <span className="mini-nav-text">
             <img src={plane} alt="contato" className="nav-svg" />
             Contato
           </span>
         </li>
         <li>
-          <span>
+          <span className="mini-nav-text">
             <img src={search} alt="busca" className="nav-svg" />
             Busca
           </span>

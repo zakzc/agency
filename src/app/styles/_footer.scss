@@ -1,5 +1,5 @@
 .footer {
-    background-color: #3ec6e0;
+    background-color: $blue;
     color: white;
     position: relative;
     bottom: 0;
@@ -10,7 +10,7 @@
 .left-footer {
     width: 25%;
     float: left;
-    background-color: darkblue;
+    background-color: $dark-blue;
     height: 30px;
     text-align: right;
     margin-right: 10px;

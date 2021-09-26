@@ -34,7 +34,7 @@ li a:hover {
 
 .nav-button {
     background-color: transparent;
-    color: white;
+    color: $silver;
     // height: 15px;
     // width: 15px;
     margin-top: 15px;
@@ -52,4 +52,26 @@ li a:hover {
 .nav-svg {
     width: 20px;
     margin-right: 10px;
+}
+
+.drop-menu {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px $blue;
+    text-align: left;
+    background-color: $dark-blue;
+    color: white;
+    margin: 70px 15 px 70px 15px;
+    line-height: 2em;
+}
+
+@media (max-width: 800px) {
+    .mini-nav-text {
+        font-size: 0;
+        margin-left: 0px;
+        top: 0;
+    }
+    .nav-bar-contents {
+        margin-left: 0px;
+    }
 }
