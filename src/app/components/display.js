@@ -11,20 +11,12 @@ const Display = () => {
     <div className="display" style={{ marginTop: "-50px" }}>
       <div className="flex-container">
         <div className="flex-item-left">
-          <img
-            src={Zelda}
-            alt="Zelda game"
-            style={{ width: "350px", marginRight: "10px" }}
-          />
+          <img src={Zelda} alt="Zelda game" className="image-style" />
           {/* <DisplayText /> */}
         </div>
 
         <div className="flex-item-right">
-          <img
-            src={Sekiro}
-            alt="Sekiro game"
-            style={{ width: "350px", marginLeft: "10px" }}
-          />
+          <img src={Sekiro} alt="Sekiro game" className="image-style" />
           {/* <DisplayText /> */}
         </div>
       </div>

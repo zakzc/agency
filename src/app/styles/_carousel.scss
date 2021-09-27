@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
     border: 0;
+    // position: relative;
+    // z-index: 90;
 }
 
 .banner-image-area {
@@ -52,17 +54,6 @@
     font-size: large;
 }
 
-@media (max-width: 800px) {
-    .banner-text {
-        position: absolute;
-        bottom: 0;
-        right: 150px;
-        color: white;
-        width: 500px;
-        font-size: large;
-    }
-}
-
 .sup {
     vertical-align: baseline;
     position: relative;
@@ -72,4 +63,26 @@
 
 .price-stamp {
     color: $blue;
+}
+
+@media (max-width: 800px) {
+    .banner-text {
+        position: absolute;
+        bottom: 0;
+        right: 150px;
+        color: $silver;
+        width: 500px;
+        font-size: large;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner-text {
+        position: absolute;
+        bottom: 0;
+        right: 50px;
+        color: $silver;
+        width: 500px;
+        font-size: small;
+    }
 }

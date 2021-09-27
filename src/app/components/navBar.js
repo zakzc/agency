@@ -12,33 +12,41 @@ export default function NavBar() {
   const PopUpBox = () => {
     return (
       <div className="pop-up-box">
-        <table className="drop-menu">
-          <tr>
-            <th>Luta</th>
-            <th>Ação/Aventura</th>
-            <th>Corrida</th>
-          </tr>
-          <tr>
-            <td>Mortal Kombat</td>
-            <td>GTA V</td>
-            <td>Need for Speed</td>
-          </tr>
-          <tr>
-            <td>Smash Bros</td>
-            <td>Tomb Raider</td>
-            <td>Forza Horizon</td>
-          </tr>
-          <tr>
-            <td>Killer Instinct</td>
-            <td>Halo</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>DBZ Kakarot</td>
-            <td>Call of Duty</td>
-            <td></td>
-          </tr>
-        </table>
+        <div className="drop-menu table">
+          <div className="table-container">
+            <div id="table-item-1" className="table-area">
+              <div>
+                <h4 className="table-header">Luta</h4>
+                <ul>
+                  <li className="list-item">Mortal Kombat</li>
+                  <li className="list-item">Smash Bros</li>
+                  <li className="list-item">Killer Instinct</li>
+                  <li className="list-item">DBZ Kakarot</li>
+                </ul>
+              </div>
+            </div>
+            <div id="table-item-2" className="table-area">
+              <div>
+                <h4 className="table-header">Ação/Aventura</h4>
+                <ul>
+                  <li className="list-item">GTA V</li>
+                  <li className="list-item">Tomb Raider</li>
+                  <li className="list-item">Halo</li>
+                  <li className="list-item">Call of Duty</li>
+                </ul>
+              </div>
+            </div>
+            <div id="table-item-3 " className="table-area">
+              <div>
+                <h4 className="table-header">Corrida</h4>
+                <ul>
+                  <li className="list-item">Need for Speed</li>
+                  <li className="list-item">Forza Horizon</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   };

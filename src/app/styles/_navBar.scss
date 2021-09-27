@@ -35,13 +35,16 @@ li a:hover {
 .nav-button {
     background-color: transparent;
     color: $silver;
-    // height: 15px;
-    // width: 15px;
     margin-top: 15px;
+    margin-left: -80px;
 }
 
 .pop-up-box {
-    margin-left: 50px;
+    position: relative;
+    margin-left: 80px;
+    z-index: 100;
+    height: 200px;
+    width: 450px;
 }
 
 .mini-nav {
@@ -54,6 +57,10 @@ li a:hover {
     margin-right: 10px;
 }
 
+td {
+    font-size: small;
+}
+
 .drop-menu {
     border: 1px solid;
     padding: 10px;
@@ -61,11 +68,18 @@ li a:hover {
     text-align: left;
     background-color: $dark-blue;
     color: white;
-    margin: 70px 15 px 70px 15px;
     line-height: 2em;
 }
 
-@media (max-width: 800px) {
+.table-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+@media (max-width: 850px) {
+    .nav-bar {
+        margin-top: 2px;
+    }
     .mini-nav-text {
         font-size: 0;
         margin-left: 0px;
@@ -73,5 +87,100 @@ li a:hover {
     }
     .nav-bar-contents {
         margin-left: 0px;
+    }
+    .nav-button {
+        margin-top: 15px;
+        margin-left: -150px;
+    }
+    .pop-up-box {
+        margin-left: 140px;
+    }
+    .mini-nav {
+        margin-left: 350px;
+        top: 0;
+    }
+    .nav-svg {
+        width: 20px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .nav-bar {
+        margin-top: 0;
+    }
+    .nav-bar-contents {
+        margin-left: 0px;
+    }
+    .nav-button {
+        margin-left: -280px;
+    }
+    .mini-nav {
+        margin-left: 0;
+        top: 0;
+    }
+    .pop-up-box {
+        // margin-left: 70px;
+        z-index: 100;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+    }
+    .drop-menu {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        z-index: 100;
+        margin-left: 130px;
+    }
+}
+
+// Responsive table
+td,
+th {
+    padding: 5px 8px 10px;
+    vertical-align: top;
+    line-height: 1.2;
+}
+
+.table-container {
+    display: grid;
+    grid-template-areas: "item1 item2 item3";
+}
+#table-item-1 {
+    grid-area: item1;
+}
+#table-item-2 {
+    grid-area: item2;
+}
+#table-item-3 {
+    grid-area: item3;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+}
+
+.list-item {
+    float: left;
+    clear: left;
+}
+
+@media (max-width: 650px) {
+    .table-container {
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item3";
+    }
+    .table-area {
+        margin-bottom: 10px;
     }
 }
