@@ -1,20 +1,20 @@
 [
   {
     "name": "Outriders",
-    "imageRef": "outriders",
+    "imageRef": "require('../assets/img/outriders.png')",
     "price": "200,00",
-    "status": false
+    "status": true
   },
   {
     "name": "Cyberpunk",
-    "imageRef": "cyberpunk",
+    "imageRef": "require('../assets/img/cyberpunk.png')",
     "price": "200,00",
     "status": false
   },
   {
     "name": "Donkey Kong Country Tropical",
-    "imageRef": "donkey",
+    "imageRef": "require('../assets/img/kong.png')",
     "price": "200,00",
     "status": false
-  }
-]
+  },
+];

@@ -4,8 +4,6 @@ import cyberpunk from "../assets/img/cyberpunk.png";
 import kong from "../assets/img/kong.png";
 import outriders from "../assets/img/outriders.png";
 import squares from "../assets/img/squares.png";
-// data
-// import data from "../data/data.json";
 
 const Products = () => {
   // * data
@@ -59,15 +57,12 @@ const Products = () => {
         className="card"
         style={{
           width: "180px",
-          // height: "250px",
         }}
       >
         <div style={{ margin: "auto" }}>
+          {console.log(imageRef)}
           <img src={imageRef} alt={name} className="card-image" />
-          <div
-            className="card-container"
-            style={{ backgroundColor: "#f5f5f5" }}
-          >
+          <div className="card-container">
             <p>{name}</p>
             <h4 style={{ textDecoration: "bold" }}>{price}</h4>
             <BuyButton buyingStatus={status} />

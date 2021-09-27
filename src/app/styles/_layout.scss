@@ -35,11 +35,11 @@ body {
 .grid-container {
     display: grid;
     grid-template-areas:
-        "left middle middle middle middle right"
-        "left middle middle middle middle right"
-        "left middle middle middle middle right";
+        // "left left  middle middle middle middle right"
+        // "left left  middle middle middle middle right"
+        "left . middle right";
     /* grid-column-gap: 10px; - if a gap between the columns becomes necessary */
-    margin-top: 15%;
+    margin-top: 12%;
 }
 
 .left,

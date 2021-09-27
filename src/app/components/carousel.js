@@ -85,6 +85,17 @@ export default class Carousel extends Component {
       );
     };
 
+    const BannerText = ({ bannerHeader, bannerText, itemPrice, itemCents }) => (
+      <div className="banner-text">
+        <h1>{bannerHeader}</h1>
+        <h2 className="price-stamp">
+          <span className="sub">{itemPrice}</span>
+          <span className="sup">,{itemCents}</span>
+        </h2>
+        <div>{bannerText}</div>
+      </div>
+    );
+
     const BannerView = ({
       imageRef,
       imageAlt,
@@ -100,14 +111,12 @@ export default class Carousel extends Component {
             imageAlt={imageAlt}
             bcgColor={bcgColor}
           />
-          <div className="banner-text">
-            <h1>{imageAlt}</h1>
-            <h2 className="price-stamp">
-              <span className="sub">{itemPrice}</span>
-              <span className="sup">,{itemCents}</span>
-            </h2>
-            <div>{bannerText}</div>
-          </div>
+          <BannerText
+            bannerHeader={imageAlt}
+            bannerText={bannerText}
+            itemPrice={itemPrice}
+            itemCents={itemCents}
+          />
         </div>
       );
     };
