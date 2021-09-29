@@ -42,6 +42,8 @@
 
     /* Needed to position the navbar */
     position: relative;
+    width: 80%;
+    height: 100%;
 }
 
 .banner-text {
@@ -74,6 +76,13 @@
         width: 500px;
         font-size: large;
     }
+    .carousel {
+        height: 200px;
+    }
+    .banner-image {
+        width: 700px;
+        height: 110%;
+    }
 }
 
 @media (max-width: 650px) {
@@ -83,6 +92,16 @@
         right: 50px;
         color: $silver;
         width: 500px;
-        font-size: x-small;
+        font-size: xx-small;
+    }
+    .carousel {
+        width: 90vw;
+    }
+    .slick-track {
+        height: 1000px;
+    }
+    .banner-image {
+        // width: 400px;
+        height: 300px;
     }
 }

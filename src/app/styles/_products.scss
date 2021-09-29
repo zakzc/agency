@@ -63,3 +63,9 @@
     background-color: darkblue; /* Green */
     color: white;
 }
+
+@media (max-width: 650px) {
+    .products {
+        width: 90vw;
+    }
+}

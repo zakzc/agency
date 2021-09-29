@@ -9,6 +9,14 @@
     margin-left: 10%;
 }
 
+.nav-button {
+    background-color: transparent;
+    color: $silver;
+    margin-top: 15px;
+    float: left;
+    width: 40px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -32,13 +40,6 @@ li a:hover {
     background-color: #111;
 }
 
-.nav-button {
-    background-color: transparent;
-    color: $silver;
-    margin-top: 15px;
-    margin-left: -80px;
-}
-
 .pop-up-box {
     position: relative;
     margin-left: 80px;
@@ -48,8 +49,9 @@ li a:hover {
 }
 
 .mini-nav {
-    // margin-left: 450px;
     top: 0;
+    float: right;
+    width: 250px;
 }
 
 .nav-svg {
@@ -90,14 +92,14 @@ td {
     }
     .nav-button {
         margin-top: 15px;
-        margin-left: -150px;
+        margin-left: 20px;
     }
     .pop-up-box {
-        margin-left: 140px;
+        margin-left: 40px;
     }
     .mini-nav {
-        // margin-left: 350px;
         top: 0;
+        width: 150px;
     }
     .nav-svg {
         width: 20px;
@@ -109,22 +111,18 @@ td {
     .nav-bar {
         margin-top: 0;
     }
-    .nav-bar-contents {
-        margin-left: 0px;
-    }
     .nav-button {
-        margin-left: -250px;
-    }
-    .mini-nav {
-        margin-left: 0;
-        top: 0;
+        margin-top: 15px;
+        float: right;
     }
     .pop-up-box {
-        // margin-left: 70px;
+        margin-left: -140px;
         z-index: 100;
-        height: 100vh;
-        width: 100vw;
+        height: 400px;
         top: 0;
+    }
+    .mini-nav {
+        float: right;
     }
     .drop-menu {
         display: flex;
@@ -140,8 +138,14 @@ td {
 }
 
 @media (max-width: 450px) {
-    .nav-button {
-        margin-left: -180px;
+    .mini-nav {
+        float: right;
+    }
+}
+
+@media (max-width: 380px) {
+    .mini-nav {
+        float: left;
     }
 }
 
