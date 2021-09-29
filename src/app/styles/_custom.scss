@@ -1,20 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
-// specific
+// set up
 @import "../styles/variables";
 @import "../styles/layout";
-///
+// components
 @import "../styles/carousel";
 @import "../styles/carouselText";
 @import "../styles/display";
 @import "../styles/footer";
 @import "../styles/navBar";
 @import "../styles/products";
-//@import "../styles/productList";
 
 * {
     margin: 0;
     padding: 0;
     border: 0;
-    // overflow: hidden;
 }
-///

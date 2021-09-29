@@ -1,11 +1,10 @@
 import React from "react";
-// comps
+// components
 import Carousel from "./carousel";
 import Display from "./display";
 import Footer from "./footer";
 import NavBar from "./navBar";
 import Products from "./products";
-//import ProductList from "./productList";
 
 const Layout = () => {
   return (

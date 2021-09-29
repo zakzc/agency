@@ -18,8 +18,6 @@ export default class Carousel extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      // nextArrow: <SampleNextArrow />,
-      // prevArrow: <SamplePrevArrow />,
       responsive: [
         {
           breakpoint: 600,

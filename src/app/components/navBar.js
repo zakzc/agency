@@ -5,7 +5,7 @@ import plane from "../assets/svgs/paper-plane.svg";
 import search from "../assets/svgs/search-solid.svg";
 import bag from "../assets/svgs/shopping-bag-solid.svg";
 // components
-import NavbarPopup from "./navBar_PopUp";
+import NavbarPopup from "./navBarPopUp";
 
 export default function NavBar() {
   const [popUp, setPopUp] = useState(false);
