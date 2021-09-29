@@ -7,8 +7,9 @@ const Display = () => {
   const DisplayText = ({ text }) => {
     return <span className="display-text">{text}</span>;
   };
+
   return (
-    <div className="display" style={{ marginTop: "-50px" }}>
+    <div className="display">
       <div className="flex-container">
         <div className="image-container">
           <div className="flex-item-left">

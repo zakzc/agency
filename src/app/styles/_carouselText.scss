@@ -1,0 +1,56 @@
+.banner-text-container {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    word-wrap: break-word;
+    font-size: medium;
+}
+
+.banner-text-area {
+    width: 90%;
+}
+
+.sup {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.5em;
+    font-size: small;
+}
+
+.price-stamp {
+    color: $blue;
+}
+
+@media (max-width: 800px) {
+    .banner-text-container {
+        right: 30px;
+        font-size: large;
+        width: 400px;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner-text-container {
+        // right: 30px;
+        width: 500px;
+        font-size: medium;
+    }
+    .banner-text-area {
+        width: 300px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner-text-container {
+        width: 300px;
+        font-size: small;
+    }
+    .banner-text-area {
+        width: 250px;
+        margin-left: 10px;
+    }
+}

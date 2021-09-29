@@ -6,32 +6,7 @@ import Banner2 from "../assets/img/principal_banner_desktop_02.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
-// function SampleNextArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{ ...style, display: "block", background: "red" }}
-//       onClick={onClick}
-//     />
-//   );
-// }
-
-// function SamplePrevArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{
-//         ...style,
-//         display: "block",
-//         background: "green",
-//       }}
-//       onClick={onClick}
-//     />
-//   );
-// }
+import CarouselText from "./carouselText";
 
 export default class Carousel extends Component {
   render() {
@@ -56,7 +31,8 @@ export default class Carousel extends Component {
         },
       ],
     };
-    // * data
+
+    // * Data
     const BannerData = [
       {
         reference: Banner1,
@@ -85,17 +61,6 @@ export default class Carousel extends Component {
       );
     };
 
-    const BannerText = ({ bannerHeader, bannerText, itemPrice, itemCents }) => (
-      <div className="banner-text">
-        <h1>{bannerHeader}</h1>
-        <h2 className="price-stamp">
-          <span className="sub">{itemPrice}</span>
-          <span className="sup">,{itemCents}</span>
-        </h2>
-        <div>{bannerText}</div>
-      </div>
-    );
-
     const BannerView = ({
       imageRef,
       imageAlt,
@@ -111,7 +76,7 @@ export default class Carousel extends Component {
             imageAlt={imageAlt}
             bcgColor={bcgColor}
           />
-          <BannerText
+          <CarouselText
             bannerHeader={imageAlt}
             bannerText={bannerText}
             itemPrice={itemPrice}
